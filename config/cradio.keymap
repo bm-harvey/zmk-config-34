@@ -16,7 +16,7 @@
             label = "hold_tap";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             tapping-term-ms = <160>;
             quick-tap-ms = <150>;
             global-quick-tap;
@@ -47,7 +47,7 @@
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      z      │      x      │      c      │      v      │      b      │   │      n      │      m      │      ,      │      .      │    enter    │
         //│   control   │     alt     │     gui     │             │             │   │             │             │     gui     │     alt     │    shift    │
-           &mt LCTRL Z   &mt LALT X    &mt LGUI C    &kp V         &kp B             &kp N         &kp M      &mt LGUI COMMA  &mt LALT DOT  &mt LSHFT RET
+           &ht LCTRL Z   &ht LALT X    &ht LGUI C    &kp V         &kp B             &kp N         &kp M      &ht LGUI COMMA  &ht LALT DOT  &ht LSHFT RET
         //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
         //                                          │   layer     │   space     │   │  control    │   shift*    │
         //                                          │             │             │   │             │             │
@@ -83,7 +83,7 @@
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
         //│      q      │    shift    │      .      │      ,      │     esc     │   │   delete    │      `      │      up     │      '      │  backspace  │
         //│    macro    │             │    control  │     alt     │     gui     │   │             │             │             │             │             │
-          &kp Q          &kp LSHFT    &mt LCTRL DOT &mt LALT COMMA &mt LGUI ESC       &kp DEL      &kp GRAVE     &kp UP        &kp SQT      &kp BSPC
+          &kp Q          &kp LSHFT    &ht LCTRL DOT &ht LALT COMMA &ht LGUI ESC       &kp DEL      &kp GRAVE     &kp UP        &kp SQT      &kp BSPC
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      1      │      2      │      3      │      4      │      5      │   │      \      │    left     │     down    │    right    │      ;      │
         //│             │             │             │             │             │   │             │             │             │             │             │
@@ -91,7 +91,7 @@
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      6      │      7      │      8      │      9      │      0      │   │      _      │      /      │      (      │      )      │    enter    │
         //│             │             │             │             │             │   │             │             │             │             │    shift    │
-          &kp N6        &kp N7        &kp N8        &kp N9        &kp N0             &kp UNDER    &kp FSLH      &kp LPAR      &kp RPAR      &mt LSHFT RET
+          &kp N6        &kp N7        &kp N8        &kp N9        &kp N0             &kp UNDER    &kp FSLH      &kp LPAR      &kp RPAR      &ht LSHFT RET
         //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
         //                                          │   layer     │   space     │   │  control    │   shift*    │
         //                                          │             │             │   │             │             │

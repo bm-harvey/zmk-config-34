@@ -85,7 +85,7 @@
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
         //│      q      │    shift    │      .      │      ,      │     esc     │   │   delete    │      `      │      up     │      '      │  backspace  │
         //│    macro    │             │    control  │     alt     │     gui     │   │             │             │             │             │             │
-      &lt MACRO_LAY q   &kp LSHFT    &ht LCTRL DOT &ht LALT COMMA &ht LGUI ESC       &kp DEL      &kp GRAVE     &kp UP        &kp SQT      &kp BSPC
+        &lt MACRO_LAY Q &kp LSHFT    &ht LCTRL DOT &ht LALT COMMA &ht LGUI ESC       &kp DEL      &kp GRAVE     &kp UP        &kp SQT      &kp BSPC
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      1      │      2      │      3      │      4      │      5      │   │      \      │    left     │     down    │    right    │      ;      │
         //│             │             │             │             │             │   │             │             │             │             │             │

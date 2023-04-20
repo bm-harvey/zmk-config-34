@@ -83,7 +83,7 @@
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
         //│      q      │    shift    │      .      │      ,      │     esc     │   │   delete    │      `      │      up     │      '      │  backspace  │
         //│    macro    │             │    control  │     alt     │     gui     │   │             │             │             │             │             │
-          &kp Q          &kp LSHFT    &mt LCTRL DOT &mt LALT COMMA &mt LGUI ESC       &kp DEL      &kp GRAVE     &kp UP        &kp APOS      &kp BSPC
+          &kp Q          &kp LSHFT    &mt LCTRL DOT &mt LALT COMMA &mt LGUI ESC       &kp DEL      &kp GRAVE     &kp UP        &kp SQT      &kp BSPC
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      1      │      2      │      3      │      4      │      5      │   │      \      │    left     │     down    │    right    │      ;      │
         //│             │             │             │             │             │   │             │             │             │             │             │
@@ -105,17 +105,17 @@
         shift_sym_nav_layer {
             bindings = <
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        //│      Q      │    %        │      ^      │      ,      │     esc     │   │   delete    │      `      │      up     │      '      │  backspace  │
-        //│             │             │             │     alt     │     gui     │   │             │             │             │             │             │
-          &kp LS(q)     &kp PERCENT   &kp CARET     &mt LALT COMMA &mt LGUI ESC       &kp DEL      &kp GRAVE     &kp UP        &kp APOS      &kp BSPC
-        //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        //│      1      │      2      │      3      │      4      │      5      │   │      \      │    left     │     down    │    right    │      ;      │
+        //│      Q      │      %      │      ^      │      &      │     esc     │   │   delete    │      ~      │   page up   │      "      │  backspace  │
         //│             │             │             │             │             │   │             │             │             │             │             │
-          &kp N1         &kp N2       &kp N3        &kp N4        &kp N5             &kp BSLH     &kp LEFT      &kp DOWN      &kp RIGHT     &kp SEMI
+          &kp LS(Q)     &kp PERCENT   &kp CARET     &kp AMPS      &kp ESC           &kp DEL      &kp TILDE      &kp PGUP       &kp DQT      &kp BSPC
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        //│      6      │      7      │      8      │      9      │      0      │   │      _      │      /      │      (      │      )      │    enter    │
-        //│             │             │             │             │             │   │             │             │     gui     │             │    shift    │
-          &kp N6        &kp N7        &kp N8        &kp N9        &kp N0             &kp UNDER    &kp FSLH      &kp LS(9)     &kp LS(0)     &mt LSHFT RET
+        //│      /      │      *      │      -      │      +      │      =      │   │      |      │    home     │  page down  │    end      │      :      │
+        //│             │             │             │             │             │   │             │             │             │             │             │
+          &kp FSLH      &kp STAR      &kp MINUS      &kp PLUS     &kp EQUAL          &kp PIPE     &kp HOME      &kp PGDN      &kp END       &kp COLON
+        //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+        //│      !      │      @      │      #      │      $      │      _      │   │      [      │      ]      │      {      │      }      │       ?     │
+        //│             │             │             │             │             │   │             │             │             │             │             │
+          &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp UNDER         &kp LBKT      &kp RBKT      &kp LBRC      &kp RBRC      &kp QMARK
         //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
         //                                          │   layer     │   space     │   │  control    │   shift*    │
         //                                          │             │             │   │             │             │

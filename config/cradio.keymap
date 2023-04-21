@@ -38,7 +38,7 @@
         label = "->";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        bindings = <&macro_press &kp MINUS &kp LS(DOT)>;
+        bindings = <&macro_tap &kp MINUS &kp LS(DOT)>;
       };
     };
 

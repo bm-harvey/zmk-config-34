@@ -71,8 +71,8 @@ path {
     fill: none;
 }
 </style>
-<g class="layer-base_layer">
-<text x="30.0" y="28.0" class="label">base_layer:</text>
+<g class="layer-base">
+<text x="30.0" y="28.0" class="label">base:</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="110.08000000000001" width="52.0" height="52.0" class=""/>
 <text x="58.0" y="136.08" class="tap">TAB</text>
 <rect rx="6.0" ry="6.0" x="88.0" y="75.36" width="52.0" height="52.0" class=""/>
@@ -140,16 +140,16 @@ path {
 <text x="674.0" y="248.08" class="tap">RET</text>
 <text x="674.0" y="272.08000000000004" class="hold">LSHFT</text>
 <rect rx="6.0" ry="6.0" x="228.0" y="268.0" width="52.0" height="52.0" class=""/>
-<text x="254.0" y="294.0" class="tap">sym_nav_layer</text>
+<text x="254.0" y="294.0" class="tap">sym</text>
 <rect rx="6.0" ry="6.0" x="284.0" y="282.0" width="52.0" height="52.0" class=""/>
 <text x="310.0" y="308.0" class="tap">SPACE</text>
 <rect rx="6.0" ry="6.0" x="396.0" y="282.0" width="52.0" height="52.0" class=""/>
 <text x="422.0" y="308.0" class="tap">LCTRL</text>
 <rect rx="6.0" ry="6.0" x="452.0" y="268.0" width="52.0" height="52.0" class=""/>
-<text x="478.0" y="294.0" class="tap">shift_default_layer</text>
+<text x="478.0" y="294.0" class="tap">sh_base</text>
 </g>
-<g class="layer-shift_default_layer">
-<text x="30.0" y="364.0" class="label">shift_default_layer:</text>
+<g class="layer-sh_base">
+<text x="30.0" y="364.0" class="label">sh_base:</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="446.08000000000004" width="52.0" height="52.0" class=""/>
 <text x="58.0" y="472.08000000000004" class="tap">LS(TAB)</text>
 <rect rx="6.0" ry="6.0" x="88.0" y="411.36" width="52.0" height="52.0" class=""/>
@@ -211,19 +211,19 @@ path {
 <rect rx="6.0" ry="6.0" x="648.0" y="558.08" width="52.0" height="52.0" class=""/>
 <text x="674.0" y="584.08" class="tap">LS(RET)</text>
 <rect rx="6.0" ry="6.0" x="228.0" y="604.0" width="52.0" height="52.0" class=""/>
-<text x="254.0" y="630.0" class="tap">sym_nav_layer</text>
+<text x="254.0" y="630.0" class="tap">sym</text>
 <rect rx="6.0" ry="6.0" x="284.0" y="618.0" width="52.0" height="52.0" class=""/>
 <text x="310.0" y="644.0" class="tap">SPACE</text>
 <rect rx="6.0" ry="6.0" x="396.0" y="618.0" width="52.0" height="52.0" class=""/>
 <text x="422.0" y="644.0" class="tap">LCTRL</text>
 <rect rx="6.0" ry="6.0" x="452.0" y="604.0" width="52.0" height="52.0" class="held"/>
-<text x="478.0" y="630.0" class="held tap">shift_default_layer</text>
+<text x="478.0" y="630.0" class="held tap">sh_base</text>
 </g>
-<g class="layer-sym_nav_layer">
-<text x="30.0" y="700.0" class="label">sym_nav_layer:</text>
+<g class="layer-sym">
+<text x="30.0" y="700.0" class="label">sym:</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="782.08" width="52.0" height="52.0" class=""/>
 <text x="58.0" y="808.08" class="tap">Q</text>
-<text x="58.0" y="832.08" class="hold">macro_layer</text>
+<text x="58.0" y="832.08" class="hold">macro</text>
 <rect rx="6.0" ry="6.0" x="88.0" y="747.36" width="52.0" height="52.0" class=""/>
 <text x="114.0" y="773.36" class="tap">LSHFT</text>
 <rect rx="6.0" ry="6.0" x="144.0" y="730.0" width="52.0" height="52.0" class=""/>
@@ -265,7 +265,7 @@ path {
 <text x="618.0" y="829.36" class="tap">RIGHT</text>
 <rect rx="6.0" ry="6.0" x="648.0" y="838.0799999999999" width="52.0" height="52.0" class=""/>
 <text x="674.0" y="864.0799999999999" class="tap">;</text>
-<text x="674.0" y="888.0799999999999" class="hold">fxn_layer</text>
+<text x="674.0" y="888.0799999999999" class="hold">fxn</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="894.08" width="52.0" height="52.0" class=""/>
 <text x="58.0" y="920.08" class="tap">6</text>
 <rect rx="6.0" ry="6.0" x="88.0" y="859.36" width="52.0" height="52.0" class=""/>
@@ -288,16 +288,16 @@ path {
 <text x="674.0" y="920.08" class="tap">RET</text>
 <text x="674.0" y="944.08" class="hold">LSHFT</text>
 <rect rx="6.0" ry="6.0" x="228.0" y="940.0" width="52.0" height="52.0" class="held"/>
-<text x="254.0" y="966.0" class="held tap">sym_nav_layer</text>
+<text x="254.0" y="966.0" class="held tap">sym</text>
 <rect rx="6.0" ry="6.0" x="284.0" y="954.0" width="52.0" height="52.0" class=""/>
 <text x="310.0" y="980.0" class="tap">SPACE</text>
 <rect rx="6.0" ry="6.0" x="396.0" y="954.0" width="52.0" height="52.0" class=""/>
 <text x="422.0" y="980.0" class="tap">LCTRL</text>
 <rect rx="6.0" ry="6.0" x="452.0" y="940.0" width="52.0" height="52.0" class=""/>
-<text x="478.0" y="966.0" class="tap">shift_default_layer</text>
+<text x="478.0" y="966.0" class="tap">sh_base</text>
 </g>
-<g class="layer-shift_sym_nav_layer">
-<text x="30.0" y="1036.0" class="label">shift_sym_nav_layer:</text>
+<g class="layer-sh_sym">
+<text x="30.0" y="1036.0" class="label">sh_sym:</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="1118.08" width="52.0" height="52.0" class=""/>
 <text x="58.0" y="1144.08" class="tap">LS(Q)</text>
 <rect rx="6.0" ry="6.0" x="88.0" y="1083.36" width="52.0" height="52.0" class=""/>
@@ -359,16 +359,16 @@ path {
 <rect rx="6.0" ry="6.0" x="648.0" y="1230.08" width="52.0" height="52.0" class=""/>
 <text x="674.0" y="1256.08" class="tap">?</text>
 <rect rx="6.0" ry="6.0" x="228.0" y="1276.0" width="52.0" height="52.0" class=""/>
-<text x="254.0" y="1302.0" class="tap">sym_nav_layer</text>
+<text x="254.0" y="1302.0" class="tap">sym</text>
 <rect rx="6.0" ry="6.0" x="284.0" y="1290.0" width="52.0" height="52.0" class=""/>
 <text x="310.0" y="1316.0" class="tap">SPACE</text>
 <rect rx="6.0" ry="6.0" x="396.0" y="1290.0" width="52.0" height="52.0" class=""/>
 <text x="422.0" y="1316.0" class="tap">LCTRL</text>
 <rect rx="6.0" ry="6.0" x="452.0" y="1276.0" width="52.0" height="52.0" class=""/>
-<text x="478.0" y="1302.0" class="tap">shift_default_layer</text>
+<text x="478.0" y="1302.0" class="tap">sh_base</text>
 </g>
-<g class="layer-fxn_layer">
-<text x="30.0" y="1372.0" class="label">fxn_layer:</text>
+<g class="layer-fxn">
+<text x="30.0" y="1372.0" class="label">fxn:</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="1454.08" width="52.0" height="52.0" class=""/>
 <text x="58.0" y="1480.08" class="tap">
 <tspan x="58.0" dy="-0.6em">BT</tspan><tspan x="58.0" dy="1.2em">CLR</tspan></text>
@@ -419,16 +419,16 @@ path {
 <rect rx="6.0" ry="6.0" x="592.0" y="1531.3600000000001" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="648.0" y="1566.08" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="228.0" y="1612.0" width="52.0" height="52.0" class="held"/>
-<text x="254.0" y="1638.0" class="held tap">sym_nav_layer</text>
+<text x="254.0" y="1638.0" class="held tap">sym</text>
 <rect rx="6.0" ry="6.0" x="284.0" y="1626.0" width="52.0" height="52.0" class=""/>
 <text x="310.0" y="1652.0" class="tap">SPACE</text>
 <rect rx="6.0" ry="6.0" x="396.0" y="1626.0" width="52.0" height="52.0" class=""/>
 <text x="422.0" y="1652.0" class="tap">SPACE</text>
 <rect rx="6.0" ry="6.0" x="452.0" y="1612.0" width="52.0" height="52.0" class=""/>
-<text x="478.0" y="1638.0" class="tap">shift_default_layer</text>
+<text x="478.0" y="1638.0" class="tap">sh_base</text>
 </g>
-<g class="layer-macro_layer">
-<text x="30.0" y="1708.0" class="label">macro_layer:</text>
+<g class="layer-macro">
+<text x="30.0" y="1708.0" class="label">macro:</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="1790.08" width="52.0" height="52.0" class="held"/>
 <rect rx="6.0" ry="6.0" x="88.0" y="1755.36" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="144.0" y="1738.0" width="52.0" height="52.0" class=""/>
@@ -473,12 +473,12 @@ path {
 <text x="618.0" y="1893.3600000000001" class="tap">NEXT</text>
 <rect rx="6.0" ry="6.0" x="648.0" y="1902.08" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="228.0" y="1948.0" width="52.0" height="52.0" class="held"/>
-<text x="254.0" y="1974.0" class="held tap">sym_nav_layer</text>
+<text x="254.0" y="1974.0" class="held tap">sym</text>
 <rect rx="6.0" ry="6.0" x="284.0" y="1962.0" width="52.0" height="52.0" class=""/>
 <text x="310.0" y="1988.0" class="tap">SPACE</text>
 <rect rx="6.0" ry="6.0" x="396.0" y="1962.0" width="52.0" height="52.0" class=""/>
 <text x="422.0" y="1988.0" class="tap">LCTRL</text>
 <rect rx="6.0" ry="6.0" x="452.0" y="1948.0" width="52.0" height="52.0" class=""/>
-<text x="478.0" y="1974.0" class="tap">shift_default_layer</text>
+<text x="478.0" y="1974.0" class="tap">sh_base</text>
 </g>
 </svg>

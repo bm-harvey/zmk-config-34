@@ -1,0 +1,98 @@
+layout: {qmk_keyboard: ferris/sweep}
+layers:
+  base_layer:
+  - [TAB, W, E, R, T, Y, U, I, O, BSPC]
+  - [A, S, D, F, G, H, J, K, L, P]
+  - - {t: Z, h: LCTRL}
+    - {t: X, h: LALT}
+    - {t: C, h: LGUI}
+    - V
+    - B
+    - N
+    - M
+    - {t: ',', h: LGUI}
+    - {t: ., h: LALT}
+    - {t: RET, h: LSHFT}
+  - [sym_nav_layer, SPACE, LCTRL, shift_default_layer]
+  shift_default_layer:
+  - [LS(TAB), LS(W), LS(E), LS(R), LS(T), LS(Y), LS(U), LS(I), LS(O), BSPC]
+  - [LS(A), LS(S), LS(D), LS(F), LS(G), LS(H), LS(J), LS(K), LS(L), LS(P)]
+  - [LS(Z), LS(X), LS(C), LS(V), LS(B), LS(N), LS(M), LS(COMMA), LS(DOT), LS(RET)]
+  - - sym_nav_layer
+    - SPACE
+    - LCTRL
+    - {t: shift_default_layer, type: held}
+  sym_nav_layer:
+  - - {t: Q, h: macro_layer}
+    - LSHFT
+    - {t: ., h: LCTRL}
+    - {t: ',', h: LALT}
+    - {t: ESC, h: LGUI}
+    - DEL
+    - '`'
+    - UP
+    - ''''
+    - BSPC
+  - - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - \
+    - LEFT
+    - DOWN
+    - RIGHT
+    - {t: ;, h: fxn_layer}
+  - - '6'
+    - '7'
+    - '8'
+    - '9'
+    - '0'
+    - _
+    - /
+    - (
+    - )
+    - {t: RET, h: LSHFT}
+  - - {t: sym_nav_layer, type: held}
+    - SPACE
+    - LCTRL
+    - shift_default_layer
+  shift_sym_nav_layer:
+  - [LS(Q), '%', ^, '&', ESC, DEL, '~', PGUP, '"', BSPC]
+  - [/, '*', '-', +, '=', '|', HOME, PGDN, END, ':']
+  - ['!', '@', '#', $, _, '[', ']', '{', '}', '?']
+  - [sym_nav_layer, SPACE, LCTRL, shift_default_layer]
+  fxn_layer:
+  - [BT CLR, BT 0, BT 1, F11, F12, '', '', '', '', '']
+  - - F1
+    - F2
+    - F3
+    - F4
+    - F5
+    - ''
+    - ''
+    - LALT
+    - ''
+    - {type: held}
+  - [F6, F7, F8, F9, F10, '', '', '', '', '']
+  - - {t: sym_nav_layer, type: held}
+    - SPACE
+    - SPACE
+    - shift_default_layer
+  macro_layer:
+  - - {type: held}
+    - ''
+    - ''
+    - ''
+    - ''
+    - VOL UP
+    - LC(EQUAL)
+    - ''
+    - LC(MINUS)
+    - ''
+  - ['', '', '', '', '', MUTE, LC(LBKT), '&arrow', LC(RBKT), '']
+  - ['', '', '', '', '', VOL DN, PREV, PP, NEXT, '']
+  - - {t: sym_nav_layer, type: held}
+    - SPACE
+    - LCTRL
+    - shift_default_layer

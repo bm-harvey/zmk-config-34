@@ -11,6 +11,7 @@
 #define SHIFT_SYM_NAV 3
 #define FXN 4
 #define MACRO_LAY 5
+#define GAME 6
 
 / {
     behaviors {

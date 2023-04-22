@@ -10,7 +10,7 @@
 #define SYM_NAV 2
 #define SHIFT_SYM_NAV 3
 #define FXN 4
-#define MACRO_LAY 5
+#define MACRO 5
 #define GAME 6
 
 / {
@@ -25,7 +25,21 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
+        lt: layer_tap {
+          tapping-tem-ms = <160>;
+        };
+
+        lt_h: layer_tap_hold_pref {
+          label = "layer_tap_hold_pref";
+          compatible = "zmk,behavior-layer-tap";
+          #binding-cells = <2>;
+          flavor = "tap-unless-interrupted"
+          tapping-term-ms = <160>;
+          bindings = <&mo> <&kp>; 
+        }
     };
+
+
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -58,7 +72,7 @@
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      z      │      x      │      c      │      v      │      b      │   │      n      │      m      │      ,      │      .      │    enter    │
         //│   control   │     alt     │     gui     │             │             │   │             │             │     gui     │     alt     │    shift    │
-           &ht LCTRL Z   &ht LALT X    &ht LGUI C    &kp V         &kp B             &kp N         &kp M      &ht LGUI COMMA  &ht LALT DOT  &ht LSHFT RET
+           &ht LCTRL Z   &ht LALT X    &ht LGUI C    &kp V         &kp B             &kp N        &kp M        &ht LGUI COMMA &ht LALT DOT  &ht LSHFT RET
         //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
         //                                          │   layer     │   space     │   │  control    │   shift*    │
         //                                          │             │             │   │             │             │
@@ -94,7 +108,7 @@
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
         //│      q      │    shift    │      .      │      ,      │     esc     │   │   delete    │      `      │      up     │      '      │  backspace  │
         //│    macro    │             │    control  │     alt     │     gui     │   │             │             │             │             │             │
-        &lt MACRO_LAY Q &kp LSHFT    &ht LCTRL DOT &ht LALT COMMA &ht LGUI ESC       &kp DEL      &kp GRAVE     &kp UP        &kp SQT      &kp BSPC
+          &lt MACRO Q &kp LSHFT    &ht LCTRL DOT &ht LALT COMMA &ht LGUI ESC       &kp DEL      &kp GRAVE     &kp UP        &kp SQT      &kp BSPC
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      1      │      2      │      3      │      4      │      5      │   │      \      │    left     │     down    │    right    │      ;      │
         //│             │             │             │             │             │   │             │             │             │             │     fxn     │

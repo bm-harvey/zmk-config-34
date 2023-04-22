@@ -31,8 +31,8 @@
         //   tapping-tem-ms = <160>;
         // };
 
-        lt_h: layer_tap_hold_pref {
-          label = "layer_tap_hold_pref";
+        lt_tui: layer_tap_tui {
+          label = "layer_tap_tui";
           compatible = "zmk,behavior-layer-tap";
           #binding-cells = <2>;
           flavor = "tap-unless-interrupted";
@@ -75,7 +75,7 @@
         //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
         //                                          │   layer     │   space     │   │  control    │   shift*    │
         //                                          │             │             │   │             │             │
-                                               &lt_h SYM_NAV BSPC &kp SPACE         &kp LCTRL     &mo LAYER_SHIFT        
+                                               &lt_tui SYM_NAV BSPC &kp SPACE         &kp LCTRL     &mo LAYER_SHIFT        
         //                                          ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };

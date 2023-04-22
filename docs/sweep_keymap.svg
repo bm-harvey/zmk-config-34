@@ -74,7 +74,7 @@ path {
 <g class="layer-base">
 <text x="30.0" y="28.0" class="label">base:</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="110.08000000000001" width="52.0" height="52.0" class=""/>
-<text x="58.0" y="136.08" class="tap">TAB</text>
+<text x="58.0" y="136.08" class="tap">Q</text>
 <rect rx="6.0" ry="6.0" x="88.0" y="75.36" width="52.0" height="52.0" class=""/>
 <text x="114.0" y="101.36" class="tap">W</text>
 <rect rx="6.0" ry="6.0" x="144.0" y="58.0" width="52.0" height="52.0" class=""/>
@@ -140,7 +140,8 @@ path {
 <text x="674.0" y="248.08" class="tap">RET</text>
 <text x="674.0" y="272.08000000000004" class="hold">LSHFT</text>
 <rect rx="6.0" ry="6.0" x="228.0" y="268.0" width="52.0" height="52.0" class=""/>
-<text x="254.0" y="294.0" class="tap">sym</text>
+<text x="254.0" y="294.0" class="tap">TAB</text>
+<text x="254.0" y="318.0" class="hold">sym</text>
 <rect rx="6.0" ry="6.0" x="284.0" y="282.0" width="52.0" height="52.0" class=""/>
 <text x="310.0" y="308.0" class="tap">SPACE</text>
 <rect rx="6.0" ry="6.0" x="396.0" y="282.0" width="52.0" height="52.0" class=""/>
@@ -151,7 +152,7 @@ path {
 <g class="layer-sh_base">
 <text x="30.0" y="364.0" class="label">sh_base:</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="446.08000000000004" width="52.0" height="52.0" class=""/>
-<text x="58.0" y="472.08000000000004" class="tap">LS(TAB)</text>
+<text x="58.0" y="472.08000000000004" class="tap">LS(Q)</text>
 <rect rx="6.0" ry="6.0" x="88.0" y="411.36" width="52.0" height="52.0" class=""/>
 <text x="114.0" y="437.36" class="tap">LS(W)</text>
 <rect rx="6.0" ry="6.0" x="144.0" y="394.0" width="52.0" height="52.0" class=""/>
@@ -222,8 +223,7 @@ path {
 <g class="layer-sym">
 <text x="30.0" y="700.0" class="label">sym:</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="782.08" width="52.0" height="52.0" class=""/>
-<text x="58.0" y="808.08" class="tap">Q</text>
-<text x="58.0" y="832.08" class="hold">macro</text>
+<text x="58.0" y="808.08" class="tap">macro</text>
 <rect rx="6.0" ry="6.0" x="88.0" y="747.36" width="52.0" height="52.0" class=""/>
 <text x="114.0" y="773.36" class="tap">LSHFT</text>
 <rect rx="6.0" ry="6.0" x="144.0" y="730.0" width="52.0" height="52.0" class=""/>
@@ -299,7 +299,7 @@ path {
 <g class="layer-sh_sym">
 <text x="30.0" y="1036.0" class="label">sh_sym:</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="1118.08" width="52.0" height="52.0" class=""/>
-<text x="58.0" y="1144.08" class="tap">LS(Q)</text>
+<text x="58.0" y="1144.08" class="tap">&amp;nont</text>
 <rect rx="6.0" ry="6.0" x="88.0" y="1083.36" width="52.0" height="52.0" class=""/>
 <text x="114.0" y="1109.36" class="tap">%</text>
 <rect rx="6.0" ry="6.0" x="144.0" y="1066.0" width="52.0" height="52.0" class=""/>

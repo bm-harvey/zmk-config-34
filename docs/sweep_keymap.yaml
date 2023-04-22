@@ -99,5 +99,5 @@ layers:
   game:
   - [TAB, Q, W, E, R, VOL UP, '', '', '', '']
   - [LSHFT, A, S, D, F, MUTE, '', '', '', '']
-  - [LCTRL, z, x, c, v, VOL DN, PREV, PP, NEXT, '']
-  - [ESC, SPACE, '', base]
+  - [LCTRL, Z, X, C, V, VOL DN, PREV, PP, NEXT, '']
+  - [ESC, SPACE, '', '&to']

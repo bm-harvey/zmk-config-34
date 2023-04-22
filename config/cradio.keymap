@@ -61,9 +61,9 @@
         base {
             bindings = <
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        //│     tab     │      w      │      e      │      r      │      t      │   │      y      │      u      │      i      │      o      │  backspace  │
+        //│      q      │      w      │      e      │      r      │      t      │   │      y      │      u      │      i      │      o      │  backspace  │
         //│             │             │             │             │             │   │             │             │             │             │             │
-          &kp TAB       &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp BSPC
+          &kp Q       &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp BSPC
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      a      │      s      │      d      │      f      │      g      │   │      h      │      j      │     k       │      l      │      p      │
         //│             │             │             │             │             │   │             │             │             │             │             │
@@ -75,7 +75,7 @@
         //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
         //                                          │   layer     │   space     │   │  control    │   shift*    │
         //                                          │             │             │   │             │             │
-                                               &lt_h SYM_NAV BSPC &kp SPACE         &kp LCTRL     &mo LAYER_SHIFT        
+                                               &lt_h SYM_NAV TAB &kp SPACE         &kp LCTRL     &mo LAYER_SHIFT        
         //                                          ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -83,9 +83,9 @@
         sh_base {
             bindings = <
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        //│     tab     │      W      │      E      │      R      │      T      │   │      T      │      U      │      I      │      O      │  backspace  │
+        //│     %       │      W      │      E      │      R      │      T      │   │      T      │      U      │      I      │      O      │  backspace  │
         //│             │             │             │             │             │   │             │             │             │             │             │
-          &kp LS(TAB)   &kp LS(W)     &kp LS(E)     &kp LS(R)     &kp LS(T)         &kp LS(Y)     &kp LS(U)     &kp LS(I)     &kp LS(O)     &kp BSPC
+          &kp LS(Q)   &kp LS(W)     &kp LS(E)     &kp LS(R)     &kp LS(T)         &kp LS(Y)     &kp LS(U)     &kp LS(I)     &kp LS(O)     &kp BSPC
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      A      │      S      │      D      │      F      │      G      │   │      H      │      J      │      K      │      L      │      p      │
         //│             │             │             │             │             │   │             │             │             │             │             │
@@ -105,9 +105,9 @@
         sym {
             bindings = <
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        //│      q      │    shift    │      .      │      ,      │     esc     │   │   delete    │      `      │      up     │      '      │  backspace  │
-        //│    macro    │             │    control  │     alt     │     gui     │   │             │             │             │             │             │
-          &lt MACRO Q   &kp LSHFT     &ht LCTRL DOT &ht LALT COMMA &ht LGUI ESC     &kp DEL       &kp GRAVE     &kp UP        &kp SQT       &kp BSPC
+        //│    macro    │    shift    │      .      │      ,      │     esc     │   │   delete    │      `      │      up     │      '      │  backspace  │
+        //│             │             │    control  │     alt     │     gui     │   │             │             │             │             │             │
+          &mo MACRO     &kp LSHFT     &ht LCTRL DOT &ht LALT COMMA &ht LGUI ESC     &kp DEL       &kp GRAVE     &kp UP        &kp SQT       &kp BSPC
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      1      │      2      │      3      │      4      │      5      │   │      \      │    left     │     down    │    right    │      ;      │
         //│             │             │             │             │             │   │             │             │             │             │     fxn     │
@@ -127,9 +127,9 @@
         sh_sym {
             bindings = <
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        //│      Q      │      %      │      ^      │      &      │     esc     │   │   delete    │      ~      │   page up   │      "      │  backspace  │
+        //│             │      %      │      ^      │      &      │     esc     │   │   delete    │      ~      │   page up   │      "      │  backspace  │
         //│             │             │             │             │             │   │             │             │             │             │             │
-          &kp LS(Q)     &kp PERCENT   &kp CARET     &kp AMPS      &kp ESC           &kp DEL      &kp TILDE      &kp PGUP       &kp DQT      &kp BSPC
+          &nont         &kp PERCENT   &kp CARET     &kp AMPS      &kp ESC           &kp DEL      &kp TILDE      &kp PGUP       &kp DQT      &kp BSPC
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      /      │      *      │      -      │      +      │      =      │   │      |      │    home     │  page down  │    end      │      :      │
         //│             │             │             │             │             │   │             │             │             │             │             │

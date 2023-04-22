@@ -31,11 +31,11 @@
         //   tapping-tem-ms = <160>;
         // };
 
-        lt_tui: layer_tap_tui {
-          label = "layer_tap_tui";
+        lt_h: layer_tap_h {
+          label = "layer_tap_h";
           compatible = "zmk,behavior-hold-tap";
           #binding-cells = <2>;
-          flavor = "tap-unless-interrupted";
+          flavor = "hold-preferred";
           tapping-term-ms = <160>;
           bindings = <&mo>, <&kp>; 
         };

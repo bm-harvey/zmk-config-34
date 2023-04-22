@@ -430,8 +430,8 @@ path {
 <g class="layer-macro">
 <text x="30.0" y="1708.0" class="label">macro:</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="1790.08" width="52.0" height="52.0" class="held"/>
-<text x="58.0" y="1816.08" class="held tap">game</text>
 <rect rx="6.0" ry="6.0" x="88.0" y="1755.36" width="52.0" height="52.0" class=""/>
+<text x="114.0" y="1781.36" class="tap">game</text>
 <rect rx="6.0" ry="6.0" x="144.0" y="1738.0" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="200.0" y="1753.68" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="256.0" y="1761.52" width="52.0" height="52.0" class=""/>
@@ -543,6 +543,6 @@ path {
 <text x="310.0" y="2324.0" class="tap">SPACE</text>
 <rect rx="6.0" ry="6.0" x="396.0" y="2298.0" width="52.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="452.0" y="2284.0" width="52.0" height="52.0" class=""/>
-<text x="478.0" y="2310.0" class="tap">&amp;to</text>
+<text x="478.0" y="2310.0" class="tap">base</text>
 </g>
 </svg>

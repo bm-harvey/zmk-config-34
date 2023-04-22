@@ -80,8 +80,8 @@ layers:
     - SPACE
     - sh_base
   macro:
-  - - {t: game, type: held}
-    - ''
+  - - {type: held}
+    - game
     - ''
     - ''
     - ''
@@ -100,4 +100,4 @@ layers:
   - [TAB, Q, W, E, R, VOL UP, '', '', '', '']
   - [LSHFT, A, S, D, F, MUTE, '', '', '', '']
   - [LCTRL, Z, X, C, V, VOL DN, PREV, PP, NEXT, '']
-  - [ESC, SPACE, '', '&to']
+  - [ESC, SPACE, '', base]

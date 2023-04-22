@@ -33,7 +33,7 @@
           label = "layer_tap_hold_pref";
           compatible = "zmk,behavior-layer-tap";
           #binding-cells = <2>;
-          flavor = "tap-unless-interrupted"
+          flavor = "tap-unless-interrupted";
           tapping-term-ms = <160>;
           bindings = <&mo> <&kp>; 
         };
@@ -105,15 +105,15 @@
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
         //│      q      │    shift    │      .      │      ,      │     esc     │   │   delete    │      `      │      up     │      '      │  backspace  │
         //│    macro    │             │    control  │     alt     │     gui     │   │             │             │             │             │             │
-          &lt MACRO Q &kp LSHFT    &ht LCTRL DOT &ht LALT COMMA &ht LGUI ESC       &kp DEL      &kp GRAVE     &kp UP        &kp SQT      &kp BSPC
+          &lt MACRO Q   &kp LSHFT     &ht LCTRL DOT &ht LALT COMMA &ht LGUI ESC     &kp DEL       &kp GRAVE     &kp UP        &kp SQT       &kp BSPC
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      1      │      2      │      3      │      4      │      5      │   │      \      │    left     │     down    │    right    │      ;      │
         //│             │             │             │             │             │   │             │             │             │             │     fxn     │
-          &kp N1         &kp N2       &kp N3        &kp N4        &kp N5             &kp BSLH     &kp LEFT      &kp DOWN      &kp RIGHT     &lt FXN SEMI
+          &kp N1         &kp N2       &kp N3        &kp N4        &kp N5            &kp BSLH      &kp LEFT      &kp DOWN      &kp RIGHT     &lt FXN SEMI
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      6      │      7      │      8      │      9      │      0      │   │      _      │      /      │      (      │      )      │    enter    │
         //│             │             │             │             │             │   │             │             │             │             │    shift    │
-          &kp N6        &kp N7        &kp N8        &kp N9        &kp N0             &kp UNDER    &kp FSLH      &kp LPAR      &kp RPAR      &ht LSHFT RET
+          &kp N6        &kp N7        &kp N8        &kp N9        &kp N0            &kp UNDER     &kp FSLH      &kp LPAR      &kp RPAR      &ht LSHFT RET
         //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
         //                                          │   layer     │   space     │   │  control    │   shift*    │
         //                                          │             │             │   │             │             │

@@ -25,9 +25,9 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-        lt: layer_tap {
-          tapping-tem-ms = <160>;
-        };
+        // lt: layer_tap {
+        //   tapping-tem-ms = <160>;
+        // };
 
         lt_h: layer_tap_hold_pref {
           label = "layer_tap_hold_pref";

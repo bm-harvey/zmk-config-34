@@ -13,6 +13,8 @@
 #define MACRO 5
 #define GAME 6
 
+// #define SYM__BSPC lt_h SYM_NAV BSPC
+
 / {
     behaviors {
         ht: hold_tap {
@@ -73,7 +75,7 @@
         //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
         //                                          │   layer     │   space     │   │  control    │   shift*    │
         //                                          │             │             │   │             │             │
-                                                    &mo SYM_NAV   &kp SPACE         &kp LCTRL     &mo LAYER_SHIFT        
+                                               &lt_h SYM_NAV BSPC &kp SPACE         &kp LCTRL     &mo LAYER_SHIFT        
         //                                          ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };

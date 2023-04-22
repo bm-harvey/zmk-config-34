@@ -36,11 +36,8 @@
           flavor = "tap-unless-interrupted"
           tapping-term-ms = <160>;
           bindings = <&mo> <&kp>; 
-        }
+        };
     };
-
-
-
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
@@ -72,7 +69,7 @@
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      z      │      x      │      c      │      v      │      b      │   │      n      │      m      │      ,      │      .      │    enter    │
         //│   control   │     alt     │     gui     │             │             │   │             │             │     gui     │     alt     │    shift    │
-           &ht LCTRL Z   &ht LALT X    &ht LGUI C    &kp V         &kp B             &kp N        &kp M        &ht LGUI COMMA &ht LALT DOT  &ht LSHFT RET
+          &ht LCTRL Z   &ht LALT X    &ht LGUI C    &kp V         &kp B             &kp N         &kp M        &ht LGUI COMMA &ht LALT DOT  &ht LSHFT RET
         //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
         //                                          │   layer     │   space     │   │  control    │   shift*    │
         //                                          │             │             │   │             │             │

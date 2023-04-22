@@ -23,7 +23,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <160>;
-            quick-tap-ms = <150>;
+            quick-tap-ms = <160>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
@@ -33,7 +33,7 @@
 
         lt_tui: layer_tap_tui {
           label = "layer_tap_tui";
-          compatible = "zmk,behavior-layer-tap";
+          compatible = "zmk,behavior-hold-tap";
           #binding-cells = <2>;
           flavor = "tap-unless-interrupted";
           tapping-term-ms = <160>;

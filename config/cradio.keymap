@@ -14,7 +14,9 @@
 #define GAME 6
 
 // #define SYM__BSPC lt_h SYM_NAV BSPC
-
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
 / {
     behaviors {
         ht: hold_tap {
@@ -55,6 +57,7 @@
         bindings = <&macro_tap &kp MINUS &kp LS(DOT)>;
       };
     };
+
 
     keymap {
         compatible = "zmk,keymap";

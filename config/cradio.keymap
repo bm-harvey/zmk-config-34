@@ -15,7 +15,7 @@
 
 // #define SYM__BSPC lt_h SYM_NAV BSPC
 &caps_word {
-    continue-list = <UNDERSCORE MINUS>;
+    continue-list = <UNDERSCORE MINUS DOT>;
 };
 / {
     behaviors {

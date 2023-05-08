@@ -4,14 +4,21 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
 
 #define BASE 0
 #define LAYER_SHIFT 1
 #define SYM_NAV 2
 #define SHIFT_SYM_NAV 3
 #define FXN 4
-#define MACRO_LAY 5
+#define MACRO 5
+#define GAME 6
 
+// #define SYM__BSPC lt_h SYM_NAV BSPC
+&caps_word {
+    continue-list = <UNDERSCORE MINUS DOT>;
+};
 / {
     behaviors {
         ht: hold_tap {
@@ -20,12 +27,23 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <160>;
-            quick-tap-ms = <150>;
+            quick-tap-ms = <160>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-    };
+        // lt: layer_tap {
+        //   tapping-tem-ms = <160>;
+        // };
 
+        lt_h: layer_tap_h {
+          label = "layer_tap_h";
+          compatible = "zmk,behavior-hold-tap";
+          #binding-cells = <2>;
+          flavor = "hold-preferred";
+          tapping-term-ms = <160>;
+          bindings = <&mo>, <&kp>; 
+        };
+    };
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
@@ -42,14 +60,15 @@
       };
     };
 
+
     keymap {
         compatible = "zmk,keymap";
         base {
             bindings = <
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        //│     tab     │      w      │      e      │      r      │      t      │   │      y      │      u      │      i      │      o      │  backspace  │
+        //│      q      │      w      │      e      │      r      │      t      │   │      y      │      u      │      i      │      o      │  backspace  │
         //│             │             │             │             │             │   │             │             │             │             │             │
-          &kp TAB       &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp BSPC
+          &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp BSPC
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      a      │      s      │      d      │      f      │      g      │   │      h      │      j      │     k       │      l      │      p      │
         //│             │             │             │             │             │   │             │             │             │             │             │
@@ -57,11 +76,11 @@
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      z      │      x      │      c      │      v      │      b      │   │      n      │      m      │      ,      │      .      │    enter    │
         //│   control   │     alt     │     gui     │             │             │   │             │             │     gui     │     alt     │    shift    │
-           &ht LCTRL Z   &ht LALT X    &ht LGUI C    &kp V         &kp B             &kp N         &kp M      &ht LGUI COMMA  &ht LALT DOT  &ht LSHFT RET
+          &ht LCTRL Z   &ht LALT X    &ht LGUI C    &kp V         &kp B             &kp N         &kp M        &ht LGUI COMMA &ht LALT DOT  &ht LSHFT RET
         //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
         //                                          │   layer     │   space     │   │  control    │   shift*    │
         //                                          │             │             │   │             │             │
-                                                    &mo SYM_NAV   &kp SPACE         &kp LCTRL     &mo LAYER_SHIFT        
+                                               &lt_h SYM_NAV TAB &kp SPACE         &kp LCTRL     &mo LAYER_SHIFT        
         //                                          ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -69,9 +88,9 @@
         sh_base {
             bindings = <
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        //│     tab     │      W      │      E      │      R      │      T      │   │      T      │      U      │      I      │      O      │  backspace  │
+        //│     %       │      W      │      E      │      R      │      T      │   │      T      │      U      │      I      │      O      │  backspace  │
         //│             │             │             │             │             │   │             │             │             │             │             │
-          &kp LS(TAB)   &kp LS(W)     &kp LS(E)     &kp LS(R)     &kp LS(T)         &kp LS(Y)     &kp LS(U)     &kp LS(I)     &kp LS(O)     &kp BSPC
+          &kp LS(Q)   &kp LS(W)     &kp LS(E)     &kp LS(R)     &kp LS(T)         &kp LS(Y)     &kp LS(U)     &kp LS(I)     &kp LS(O)     &kp BSPC
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      A      │      S      │      D      │      F      │      G      │   │      H      │      J      │      K      │      L      │      p      │
         //│             │             │             │             │             │   │             │             │             │             │             │
@@ -80,9 +99,10 @@
         //│      Z      │      X      │      C      │      V      │      B      │   │      N      │      M      │      <      │      >      │    ENTER    │
         //│   control   │             │             │             │             │   │             │             │             │             │             │
           &kp LS(Z)     &kp LS(X)     &kp LS(C)     &kp LS(V)     &kp LS(B)         &kp LS(N)     &kp LS(M)     &kp LS(COMMA) &kp LS(DOT)   &kp LS(RET) 
+        //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
         //                                          │   layer     │   space     │   │  control    │   shift*    │
         //                                          │             │             │   │             │             │
-                                                    &mo SYM_NAV   &kp SPACE         &kp LCTRL     &mo LAYER_SHIFT        
+                                            &lt_h SYM_NAV LS(TAB) &kp SPACE         &kp LCTRL     &mo LAYER_SHIFT        
         //                                          ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -90,17 +110,17 @@
         sym {
             bindings = <
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        //│      q      │    shift    │      .      │      ,      │     esc     │   │   delete    │      `      │      up     │      '      │  backspace  │
-        //│    macro    │             │    control  │     alt     │     gui     │   │             │             │             │             │             │
-        &lt MACRO_LAY Q &kp LSHFT    &ht LCTRL DOT &ht LALT COMMA &ht LGUI ESC       &kp DEL      &kp GRAVE     &kp UP        &kp SQT      &kp BSPC
+        //│    macro    │    shift    │      .      │      ,      │     esc     │   │   delete    │      `      │      up     │      '      │  backspace  │
+        //│             │             │    control  │     alt     │     gui     │   │             │             │             │             │             │
+          &mo MACRO     &kp LSHFT     &ht LCTRL DOT &ht LALT COMMA &ht LGUI ESC     &kp DEL       &kp GRAVE     &kp UP        &kp SQT       &kp BSPC
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      1      │      2      │      3      │      4      │      5      │   │      \      │    left     │     down    │    right    │      ;      │
         //│             │             │             │             │             │   │             │             │             │             │     fxn     │
-          &kp N1         &kp N2       &kp N3        &kp N4        &kp N5             &kp BSLH     &kp LEFT      &kp DOWN      &kp RIGHT     &lt FXN SEMI
+          &kp N1         &kp N2       &kp N3        &kp N4        &kp N5            &kp BSLH      &kp LEFT      &kp DOWN      &kp RIGHT     &lt FXN SEMI
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      6      │      7      │      8      │      9      │      0      │   │      _      │      /      │      (      │      )      │    enter    │
         //│             │             │             │             │             │   │             │             │             │             │    shift    │
-          &kp N6        &kp N7        &kp N8        &kp N9        &kp N0             &kp UNDER    &kp FSLH      &kp LPAR      &kp RPAR      &ht LSHFT RET
+          &kp N6        &kp N7        &kp N8        &kp N9        &kp N0            &kp UNDER     &kp FSLH      &kp LPAR      &kp RPAR      &ht LSHFT RET
         //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
         //                                          │   layer     │   space     │   │  control    │   shift*    │
         //                                          │             │             │   │             │             │
@@ -112,9 +132,9 @@
         sh_sym {
             bindings = <
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        //│      Q      │      %      │      ^      │      &      │     esc     │   │   delete    │      ~      │   page up   │      "      │  backspace  │
+        //│             │      %      │      ^      │      &      │     esc     │   │   delete    │      ~      │   page up   │      "      │  backspace  │
         //│             │             │             │             │             │   │             │             │             │             │             │
-          &kp LS(Q)     &kp PERCENT   &kp CARET     &kp AMPS      &kp ESC           &kp DEL      &kp TILDE      &kp PGUP       &kp DQT      &kp BSPC
+          &none         &kp PERCENT   &kp CARET     &kp AMPS      &kp ESC           &kp DEL      &kp TILDE      &kp PGUP       &kp DQT      &kp BSPC
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      /      │      *      │      -      │      +      │      =      │   │      |      │    home     │  page down  │    end      │      :      │
         //│             │             │             │             │             │   │             │             │             │             │             │
@@ -136,17 +156,17 @@
         fxn {
             bindings = <
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        //│  Clear BT   │ BT Profile 0│ BT Profile 1│     F11     │     F12     │   │             │             │             │             │             │
+        //│  Clear BT   │ BT Profile 0│ BT Profile 1│     F11     │     F12     │   │             │             │  caps_word  │             │             │
         //│             │             │             │             │             │   │             │             │             │             │             │
-          &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &kp F11       &kp F12           &none         &none         &none         &none         &none
+          &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &kp F11       &kp F12           &none         &none         &caps_word    &none         &none
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      F1     │      F2     │      F3     │      F4     │      F5     │   │             │             │             │             │             │
         //│             │             │             │             │             │   │             │             │             │             │             │
-          &kp F1         &kp F2       &kp F3        &kp F4        &kp F5            &none         &none         &kp LALT       &none         &none
+          &kp F1         &kp F2       &kp F3        &kp F4        &kp F5            &none         &none         &kp LALT      &none         &none
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      F6     │      F7     │      F8     │      F9     |      F0     │   │             │             │             │             │             │
         //│             │             │             │             │             │   │             │             │             │             │             │
-          &kp F6        &kp F7        &kp F8        &kp F9        &kp F10           &none         &none         &none         &none         &none
+          &kp F6        &kp F7        &kp F8        &kp F9        &kp F10           &none         &out OUT_BLE  &out OUT_USB  &none         &none
         //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
         //                                          │   layer     │   space     │   │  control    │   shift*    │
         //                                          │             │             │   │             │             │
@@ -158,9 +178,9 @@
         macro {
             bindings = <
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        //│             │             │             │             │             │   │   vol up    │   zoom in   │             │   zoom out  │             │
+        //│             │    game     │             │             │             │   │   vol up    │   zoom in   │             │   zoom out  │             │
         //│             │             │             │             │             │   │             │             │             │             │             │
-          &none          &none        &none         &none         &none             &kp C_VOL_UP  &kp LC(EQUAL) &none         &kp LC(MINUS) &none
+          &none         &to GAME      &none         &none         &none             &kp C_VOL_UP  &kp LC(EQUAL) &none         &kp LC(MINUS) &none
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│             │             │             │             │             │   │    mute     │  ctrl [     │     ->      │   ctrl ]    │             │
         //│             │             │             │             │             │   │             │             │             │             │             │
@@ -172,11 +192,33 @@
         //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
         //                                          │   layer     │   space     │   │  control    │   shift*    │
         //                                          │             │             │   │             │             │
-                                                    &mo SYM_NAV   &kp SPACE         &kp LCTRL     &mo LAYER_SHIFT        
+                                                    &mo SYM_NAV   &kp SPACE         &kp LCTRL     &mo LAYER_SHIFT
+        //                                          ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+        };
+
+
+        game {
+            bindings = <
+        //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+        //│    tab      │      q      │      w      │      e      │      r      │   │   vol up    │             │             │             │             │
+        //│             │             │             │             │             │   │             │             │             │             │             │
+          &kp TAB       &kp Q         &kp W         &kp E         &kp R             &kp C_VOL_UP  &none         &none         &none         &none
+        //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+        //│    shift    │      a      │      s      │      d      │      f      │   │    mute     │             │             │             │             │
+        //│             │             │             │             │             │   │             │             │             │             │             │
+          &kp LSHFT     &kp A         &kp S         &kp D         &kp F             &kp C_MUTE    &none         &none         &none         &none
+        //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+        //│             │      z      │      x      │      c      |      v      │   │   vol dn    │     |<|     │   |> / ||   │     |>|     │             │
+        //│             │             │             │             │             │   │             │             │             │             │             │
+          &kp LCTRL     &kp Z         &kp X         &kp C         &kp V             &kp C_VOL_DN  &kp C_PREV    &kp C_PP      &kp C_NEXT    &none
+        //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+        //                                          │   escape    │   space     │   │             │   to base   │
+        //                                          │             │             │   │             │             │
+                                                    &kp ESC       &kp SPACE             &none         &to BASE       
         //                                          ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
 
     };
 };
-

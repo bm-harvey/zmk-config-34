@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: ferris/sweep}
 layers:
   base:
-  - [TAB, W, E, R, T, Y, U, I, O, BSPC]
+  - [Q, W, E, R, T, Y, U, I, O, BSPC]
   - [A, S, D, F, G, H, J, K, L, P]
   - - {t: Z, h: LCTRL}
     - {t: X, h: LALT}
@@ -13,9 +13,12 @@ layers:
     - {t: ',', h: LGUI}
     - {t: ., h: LALT}
     - {t: RET, h: LSHFT}
-  - [sym, SPACE, LCTRL, sh_base]
+  - - {t: TAB, h: sym}
+    - SPACE
+    - LCTRL
+    - sh_base
   sh_base:
-  - [LS(TAB), LS(W), LS(E), LS(R), LS(T), LS(Y), LS(U), LS(I), LS(O), BSPC]
+  - [LS(Q), LS(W), LS(E), LS(R), LS(T), LS(Y), LS(U), LS(I), LS(O), BSPC]
   - [LS(A), LS(S), LS(D), LS(F), LS(G), LS(H), LS(J), LS(K), LS(L), LS(P)]
   - [LS(Z), LS(X), LS(C), LS(V), LS(B), LS(N), LS(M), LS(COMMA), LS(DOT), LS(RET)]
   - - sym
@@ -23,7 +26,7 @@ layers:
     - LCTRL
     - {t: sh_base, type: held}
   sym:
-  - - {t: Q, h: macro}
+  - - macro
     - LSHFT
     - {t: ., h: LCTRL}
     - {t: ',', h: LALT}
@@ -58,7 +61,7 @@ layers:
     - LCTRL
     - sh_base
   sh_sym:
-  - [LS(Q), '%', ^, '&', ESC, DEL, '~', PGUP, '"', BSPC]
+  - ['&nont', '%', ^, '&', ESC, DEL, '~', PGUP, '"', BSPC]
   - [/, '*', '-', +, '=', '|', HOME, PGDN, END, ':']
   - ['!', '@', '#', $, _, '[', ']', '{', '}', '?']
   - [sym, SPACE, LCTRL, sh_base]
@@ -81,7 +84,7 @@ layers:
     - sh_base
   macro:
   - - {type: held}
-    - ''
+    - game
     - ''
     - ''
     - ''
@@ -96,3 +99,8 @@ layers:
     - SPACE
     - LCTRL
     - sh_base
+  game:
+  - [TAB, Q, W, E, R, VOL UP, '', '', '', '']
+  - [LSHFT, A, S, D, F, MUTE, '', '', '', '']
+  - [LCTRL, Z, X, C, V, VOL DN, PREV, PP, NEXT, '']
+  - [ESC, SPACE, '', base]

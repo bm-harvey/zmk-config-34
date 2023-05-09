@@ -77,7 +77,7 @@ layers:
     - LALT
     - ''
     - {type: held}
-  - [F6, F7, F8, F9, F10, '', '', '', '', '']
+  - [F6, F7, F8, F9, F10, '', OUT BLE, OUT USB, '', '']
   - - {t: sym, type: held}
     - SPACE
     - SPACE

@@ -21,7 +21,7 @@ layers:
   - [LS(Q), LS(W), LS(E), LS(R), LS(T), LS(Y), LS(U), LS(I), LS(O), BSPC]
   - [LS(A), LS(S), LS(D), LS(F), LS(G), LS(H), LS(J), LS(K), LS(L), LS(P)]
   - [LS(Z), LS(X), LS(C), LS(V), LS(B), LS(N), LS(M), LS(COMMA), LS(DOT), LS(RET)]
-  - - sym
+  - - {t: LS(TAB), h: sym}
     - SPACE
     - LCTRL
     - {t: sh_base, type: held}
@@ -61,12 +61,12 @@ layers:
     - LCTRL
     - sh_base
   sh_sym:
-  - ['&nont', '%', ^, '&', ESC, DEL, '~', PGUP, '"', BSPC]
+  - ['', '%', ^, '&', ESC, DEL, '~', PGUP, '"', BSPC]
   - [/, '*', '-', +, '=', '|', HOME, PGDN, END, ':']
   - ['!', '@', '#', $, _, '[', ']', '{', '}', '?']
   - [sym, SPACE, LCTRL, sh_base]
   fxn:
-  - [BT CLR, BT 0, BT 1, F11, F12, '', '', '', '', '']
+  - [BT CLR, BT 0, BT 1, F11, F12, '', '', '&caps_word', '', '']
   - - F1
     - F2
     - F3

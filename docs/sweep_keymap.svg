@@ -118,10 +118,8 @@ path {
 <text x="58.0" y="272.08000000000004" class="hold">LCTRL</text>
 <rect rx="6.0" ry="6.0" x="88.0" y="187.36" width="52.0" height="52.0" class=""/>
 <text x="114.0" y="213.36" class="tap">X</text>
-<text x="114.0" y="237.36" class="hold">LALT</text>
 <rect rx="6.0" ry="6.0" x="144.0" y="170.0" width="52.0" height="52.0" class=""/>
 <text x="170.0" y="196.0" class="tap">C</text>
-<text x="170.0" y="220.0" class="hold">LGUI</text>
 <rect rx="6.0" ry="6.0" x="200.0" y="185.67999999999998" width="52.0" height="52.0" class=""/>
 <text x="226.0" y="211.67999999999998" class="tap">V</text>
 <rect rx="6.0" ry="6.0" x="256.0" y="193.51999999999998" width="52.0" height="52.0" class=""/>

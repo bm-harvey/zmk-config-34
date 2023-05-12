@@ -4,8 +4,8 @@ layers:
   - [Q, W, E, R, T, Y, U, I, O, BSPC]
   - [A, S, D, F, G, H, J, K, L, P]
   - - {t: Z, h: LCTRL}
-    - {t: X, h: LALT}
-    - {t: C, h: LGUI}
+    - X
+    - C
     - V
     - B
     - N

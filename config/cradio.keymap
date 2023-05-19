@@ -58,6 +58,12 @@
         #binding-cells = <0>;
         bindings = <&macro_tap &kp MINUS &kp LS(DOT)>;
       };
+      dbl_arrow: dbl_arrow{
+        label = "=>";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&macro_tap &kp EQUAL &kp LS(DOT)>;
+      };
     };
 
 
@@ -112,7 +118,7 @@
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
         //│    macro    │    shift    │      .      │      ,      │     esc     │   │   delete    │      `      │      up     │      '      │  backspace  │
         //│             │             │    control  │     alt     │     gui     │   │             │             │             │             │             │
-          &mo MACRO     &kp LSHFT     &ht LCTRL DOT &ht LALT COMMA &ht LGUI ESC     &kp DEL       &kp GRAVE     &kp UP        &kp SQT       &kp BSPC
+        &lt_h MACRO ESC &kp LSHFT     &ht LCTRL DOT &ht LALT COMMA &ht LGUI ESC     &kp DEL       &kp GRAVE     &kp UP        &kp SQT       &kp BSPC
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      1      │      2      │      3      │      4      │      5      │   │      \      │    left     │     down    │    right    │      ;      │
         //│             │             │             │             │             │   │             │             │             │             │     fxn     │
@@ -156,9 +162,9 @@
         fxn {
             bindings = <
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        //│  Clear BT   │ BT Profile 0│ BT Profile 1│     F11     │     F12     │   │             │             │  caps_word  │             │             │
+        //│  Clear BT   │ BT Profile 0│ BT Profile 1│     F11     │     F12     │   │             │             │             │             │             │
         //│             │             │             │             │             │   │             │             │             │             │             │
-          &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &kp F11       &kp F12           &none         &none         &caps_word    &none         &none
+          &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &kp F11       &kp F12           &none         &none         &none         &none         &none
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      F1     │      F2     │      F3     │      F4     │      F5     │   │             │             │             │             │             │
         //│             │             │             │             │             │   │             │             │             │             │             │
@@ -178,9 +184,9 @@
         macro {
             bindings = <
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        //│             │    game     │             │             │             │   │   vol up    │   zoom in   │             │   zoom out  │             │
+        //│             │    game     │             │             │             │   │   vol up    │   zoom in   │     =>      │   zoom out  │             │
         //│             │             │             │             │             │   │             │             │             │             │             │
-          &none         &to GAME      &none         &none         &none             &kp C_VOL_UP  &kp LC(EQUAL) &none         &kp LC(MINUS) &none
+          &none         &to GAME      &none         &none         &none             &kp C_VOL_UP  &kp LC(EQUAL) &dbl_arrow    &kp LC(MINUS) &none
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│             │             │             │             │             │   │    mute     │  ctrl [     │     ->      │   ctrl ]    │             │
         //│             │             │             │             │             │   │             │             │             │             │             │

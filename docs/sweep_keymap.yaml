@@ -26,7 +26,7 @@ layers:
     - LCTRL
     - {t: sh_base, type: held}
   sym:
-  - - macro
+  - - {t: ESC, h: macro}
     - LSHFT
     - {t: ., h: LCTRL}
     - {t: ',', h: LALT}
@@ -66,7 +66,7 @@ layers:
   - ['!', '@', '#', $, _, '[', ']', '{', '}', '?']
   - [sym, SPACE, LCTRL, sh_base]
   fxn:
-  - [BT CLR, BT 0, BT 1, F11, F12, '', '', '&caps_word', '', '']
+  - [BT CLR, BT 0, BT 1, F11, F12, '', '', '', '', '']
   - - F1
     - F2
     - F3
@@ -90,7 +90,7 @@ layers:
     - ''
     - VOL UP
     - LC(EQUAL)
-    - ''
+    - '&dbl_arrow'
     - LC(MINUS)
     - ''
   - ['', '', '', '', '', MUTE, LC(LBKT), '&arrow', LC(RBKT), '']

@@ -116,9 +116,9 @@
         sym {
             bindings = <
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        //│    macro    │    shift    │      .      │      ,      │     esc     │   │   delete    │      `      │      up     │      '      │  backspace  │
-        //│             │             │    control  │     alt     │     gui     │   │             │             │             │             │             │
-        &lt_h MACRO ESC &kp LSHFT     &ht LCTRL DOT &ht LALT COMMA &ht LGUI ESC     &kp DEL       &kp GRAVE     &kp UP        &kp SQT       &kp BSPC
+        //│     esc     │    shift    │      .      │      ,      │     gui     │   │   delete    │      `      │      up     │      '      │  backspace  │
+        //│    macro    │             │    control  │     alt     │             │   │             │             │             │             │             │
+        &lt_h MACRO ESC &kp LSHFT     &ht LCTRL DOT &ht LALT COMMA &kp LGUI     &kp DEL       &kp GRAVE     &kp UP        &kp SQT       &kp BSPC
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      1      │      2      │      3      │      4      │      5      │   │      \      │    left     │     down    │    right    │      ;      │
         //│             │             │             │             │             │   │             │             │             │             │     fxn     │

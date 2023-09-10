@@ -118,11 +118,11 @@
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
         //│    macro    │     esc     │      .      │      ,      │     gui     │   │   delete    │      `      │      up     │      '      │  backspace  │
         //│             │    shift    │    control  │     alt     │             │   │             │             │             │             │             │
-          &mo MACRO     &ht LSHFT ESC &ht LCTRL DOT &ht LALT COMMA &kp LGUI         &kp DEL       &kp GRAVE     &kp UP        &kp SQT       &kp BSPC
+          &mo MACRO     &ht LSHFT ESC &ht LCTRL DOT &ht LALT COMMA &kp LGUI         &kp DEL       &kp GRAVE     &kp BSLH      &kp SQT       &kp BSPC
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      1      │      2      │      3      │      4      │      5      │   │      \      │    left     │     down    │    right    │      ;      │
         //│             │             │             │             │             │   │             │             │             │             │             │
-          &kp N1         &kp N2       &kp N3        &kp N4        &kp N5            &kp BSLH      &kp LEFT      &kp DOWN      &kp RIGHT     &kp SEMI
+          &kp N1         &kp N2       &kp N3        &kp N4        &kp N5            &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT     &kp SEMI
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      6      │      7      │      8      │      9      │      0      │   │      _      │      /      │      (      │      )      │    enter    │
         //│             │             │             │             │             │   │             │             │             │             │    shift    │
@@ -140,11 +140,11 @@
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
         //│             │      %      │      ^      │      &      │     esc     │   │   delete    │      ~      │   page up   │      "      │  backspace  │
         //│             │             │             │             │             │   │             │             │             │             │             │
-          &mo FXN         &kp  PERCENT   &kp CARET     &kp AMPS      &kp ESC           &kp DEL      &kp TILDE      &kp PGUP       &kp DQT      &kp BSPC
+          &mo FXN         &kp  PERCENT   &kp CARET     &kp AMPS      &kp ESC           &kp DEL      &kp TILDE   &kp PIPE       &kp DQT      &kp BSPC
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        //│      /      │      *      │      -      │      +      │      =      │   │      |      │    home     │  page down  │    end      │      :      │
+        //│      /      │      *      │      -      │      +      │      =      │   │             │             │  page down  │    end      │      :      │
         //│             │             │             │             │             │   │             │             │             │             │             │
-          &kp FSLH      &kp STAR      &kp MINUS      &kp PLUS     &kp EQUAL          &kp PIPE     &kp HOME      &kp PGDN      &kp END       &kp COLON     
+          &kp FSLH      &kp STAR      &kp MINUS      &kp PLUS     &kp EQUAL          &kp HOME     &kp PGDN      &kp PGUP      &kp END       &kp COLON     
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      !      │      @      │      #      │      $      │      _      │   │      [      │      ]      │      {      │      }      │       ?     │
         //│             │             │             │             │             │   │             │             │             │             │             │

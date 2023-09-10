@@ -81,7 +81,7 @@
           &kp A         &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L         &kp P
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      z      │      x      │      c      │      v      │      b      │   │      n      │      m      │      ,      │      .      │    enter    │
-        //│   control   │     alt     │     gui     │             │             │   │             │             │     gui     │     alt     │    shift    │
+        //│   control   │             │             │             │             │   │             │             │     gui     │     alt     │    shift    │
           &ht LCTRL Z   &kp X         &kp C         &kp V         &kp B             &kp N         &kp M        &ht LGUI COMMA &ht LALT DOT  &ht LSHFT RET
         //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
         //                                          │   layer     │   space     │   │  control    │   shift*    │
@@ -116,13 +116,13 @@
         sym {
             bindings = <
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        //│     esc     │    shift    │      .      │      ,      │     gui     │   │   delete    │      `      │      up     │      '      │  backspace  │
-        //│    macro    │             │    control  │     alt     │             │   │             │             │             │             │             │
-        &lt_h MACRO ESC &kp LSHFT     &ht LCTRL DOT &ht LALT COMMA &kp LGUI     &kp DEL       &kp GRAVE     &kp UP        &kp SQT       &kp BSPC
+        //│    macro    │     esc     │      .      │      ,      │     gui     │   │   delete    │      `      │      up     │      '      │  backspace  │
+        //│             │    shift    │    control  │     alt     │             │   │             │             │             │             │             │
+          &mo MACRO     &ht LSHFT ESC &ht LCTRL DOT &ht LALT COMMA &kp LGUI         &kp DEL       &kp GRAVE     &kp UP        &kp SQT       &kp BSPC
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      1      │      2      │      3      │      4      │      5      │   │      \      │    left     │     down    │    right    │      ;      │
-        //│             │             │             │             │             │   │             │             │             │             │     fxn     │
-          &kp N1         &kp N2       &kp N3        &kp N4        &kp N5            &kp BSLH      &kp LEFT      &kp DOWN      &kp RIGHT     &lt FXN SEMI
+        //│             │             │             │             │             │   │             │             │             │             │             │
+          &kp N1         &kp N2       &kp N3        &kp N4        &kp N5            &kp BSLH      &kp LEFT      &kp DOWN      &kp RIGHT     &kp SEMI
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      6      │      7      │      8      │      9      │      0      │   │      _      │      /      │      (      │      )      │    enter    │
         //│             │             │             │             │             │   │             │             │             │             │    shift    │
@@ -140,7 +140,7 @@
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
         //│             │      %      │      ^      │      &      │     esc     │   │   delete    │      ~      │   page up   │      "      │  backspace  │
         //│             │             │             │             │             │   │             │             │             │             │             │
-          &none         &kp PERCENT   &kp CARET     &kp AMPS      &kp ESC           &kp DEL      &kp TILDE      &kp PGUP       &kp DQT      &kp BSPC
+          &mo FXN         &kp  PERCENT   &kp CARET     &kp AMPS      &kp ESC           &kp DEL      &kp TILDE      &kp PGUP       &kp DQT      &kp BSPC
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      /      │      *      │      -      │      +      │      =      │   │      |      │    home     │  page down  │    end      │      :      │
         //│             │             │             │             │             │   │             │             │             │             │             │
@@ -164,15 +164,15 @@
         //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
         //│  Clear BT   │ BT Profile 0│ BT Profile 1│     F11     │     F12     │   │             │             │             │             │             │
         //│             │             │             │             │             │   │             │             │             │             │             │
-          &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &kp F11       &kp F12           &none         &none         &none         &none         &none
+          &none         &bt BT_SEL 0  &bt BT_SEL 1  &none         &bt BT_CLR        &none         &none         &none         &kp F11       &kp F12
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      F1     │      F2     │      F3     │      F4     │      F5     │   │             │             │             │             │             │
         //│             │             │             │             │             │   │             │             │             │             │             │
-          &kp F1         &kp F2       &kp F3        &kp F4        &kp F5            &none         &none         &kp LALT      &none         &none
+          &none         &none         &none         &none         &none             &kp F1         &kp F2       &kp F3        &kp F4        &kp F5
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│      F6     │      F7     │      F8     │      F9     |      F0     │   │             │             │             │             │             │
         //│             │             │             │             │             │   │             │             │             │             │             │
-          &kp F6        &kp F7        &kp F8        &kp F9        &kp F10           &none         &out OUT_BLE  &out OUT_USB  &none         &none
+          &none         &none         &none         &none         &none             &kp F6         &kp F7       &kp F8        &kp F9        &kp F10
         //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
         //                                          │   layer     │   space     │   │  control    │   shift*    │
         //                                          │             │             │   │             │             │

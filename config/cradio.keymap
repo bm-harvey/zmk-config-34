@@ -77,7 +77,7 @@
       cd_back: cd_back{
         #label="cd ../";
         compatible = "zmk,behavior-macro";
-        bindings = <&macro_tap &kp c &kp d &kp SPACE &kp DOT &kp DOT &kp FSLH &kp RET>;
+        bindings = <&macro_tap &kp C &kp D &kp SPACE &kp DOT &kp DOT &kp FSLH &kp RET>;
       };
     };
 

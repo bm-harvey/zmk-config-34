@@ -53,29 +53,29 @@
     };
     macros {
       arrow: arrow{
-        label = "->";
+        #label = "->";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings = <&macro_tap &kp MINUS &kp LS(DOT)>;
       };
       dbl_arrow: dbl_arrow{
-        label = "=>";
+        #label = "=>";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings = <&macro_tap &kp EQUAL &kp LS(DOT)>;
       };
       dir_back: dir_back{
-        label="../";
+        #label="../";
         compatible = "zmk,behavior-macro";
         bindings = <&macro_tap &kp DOT &kp DOT &kp FSLH>;
       };
       dir_here: dir_here{
-        label="../";
+        #label="../";
         compatible = "zmk,behavior-macro";
         bindings = <&macro_tap &kp DOT &kp FSLH>;
       };
       cd_back: cd_back{
-        label="cd ../";
+        #label="cd ../";
         compatible = "zmk,behavior-macro";
         bindings = <&macro_tap &kp c &kp d &kp SPACE &kp DOT &kp DOT &kp FSLH &kp RET>;
       };

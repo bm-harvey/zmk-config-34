@@ -69,6 +69,16 @@
         compatible = "zmk,behavior-macro";
         bindings = <&macro_tap &kp DOT &kp DOT &kp FSLH>;
       };
+      dir_here: dir_here{
+        label="../";
+        compatible = "zmk,behavior-macro";
+        bindings = <&macro_tap &kp DOT &kp FSLH>;
+      };
+      cd_back: cd_back{
+        label="cd ../";
+        compatible = "zmk,behavior-macro";
+        bindings = <&macro_tap &kp c &kp d &kp SPACE &kp DOT &kp DOT &kp FSLH &kp RET>;
+      };
     };
 
 
@@ -193,9 +203,9 @@
         //│             │             │             │             │             │   │             │             │             │             │             │
           &none         &to GAME      &none         &none         &none             &kp C_VOL_UP  &kp LC(EQUAL) &dbl_arrow    &kp LC(MINUS) &none
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        //│             │             │             │             │             │   │    mute     │     ../     │     ->      │     ./      │             │
+        //│             │             │             │             │             │   │    mute     │     ../     │     ->      │     ./      │  cd ../<cr> │
         //│             │             │             │             │             │   │             │             │             │             │             │
-          &none          &none        &none         &none         &none             &kp C_MUTE    &dir_back     &arrow        &dir_back     &none
+          &none          &none        &none         &none         &none             &kp C_MUTE    &dir_back     &arrow        &dir_here     &cd_back
         //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         //│             │             │             │             |             │   │   vol dn    │     |<|     │   |> / ||   │     |>|     │             │
         //│             │             │             │             │             │   │             │             │             │             │             │

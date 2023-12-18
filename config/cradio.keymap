@@ -68,7 +68,7 @@
         label="../";
         compatible = "zmk,behavior-macro";
         bindings = <&macro_tap &kp DOT &kp DOT &kp FSLH>;
-      }
+      };
     };
 
 
